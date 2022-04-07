@@ -1,0 +1,31 @@
+.form-control,
+.form-button {
+  font: var(--font-open-sans);
+}
+
+.form {
+  inline-size: 100%;
+  block-size: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.form-control {
+  inline-size: 509px;
+  border-radius: 19px;
+  padding: 18px 0 18px 28px;
+  outline: 1px solid var(--color-black);
+}
+
+.form-button {
+  inline-size: 360px;
+  border-radius: 14px;
+  background-color: var(--color-gray);
+  cursor: pointer;
+  border: unset;
+}
+
+.form-button:hover {
+  filter: contrast(.8);
+}

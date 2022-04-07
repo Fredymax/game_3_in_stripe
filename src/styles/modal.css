@@ -1,0 +1,30 @@
+dialog {
+  inline-size: 681px;
+  block-size: 681px;
+  inset: 0;
+  margin: auto;
+  border: unset;
+  background: #E6E2FFFC;
+  border-radius: 75px;
+  padding: 58px;
+}
+
+.modal-content {
+  display: grid;
+  place-items: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.modal-body {
+  inline-size: 530px;
+  block-size: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body h1 {
+  font: var(--font-open-sans);
+}

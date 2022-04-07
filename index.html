@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego 3 en raya</title>
+  <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <main class="game">
+      <form action="javascript:;" id="form" class="form">
+        <input type="text" id="user-name" name="user-name" autocomplete="user-name" class="form-control" placeholder="NickName">
+        <button type="submit" class="form-button">Jugar!</button>
+      </form>
+      <div class="content-grid">
+        <section class="grid-game">
+          <div class="grid-item" id="grid-1" data-grid="1"></div>
+          <div class="grid-item" id="grid-2" data-grid="2"></div>
+          <div class="grid-item" id="grid-3" data-grid="3"></div>
+          <div class="grid-item" id="grid-4" data-grid="4"></div>
+          <div class="grid-item" id="grid-5" data-grid="5"></div>
+          <div class="grid-item" id="grid-6" data-grid="6"></div>
+          <div class="grid-item" id="grid-7" data-grid="7"></div>
+          <div class="grid-item" id="grid-8" data-grid="8"></div>
+          <div class="grid-item" id="grid-9" data-grid="9"></div>
+        </section>
+        <dialog class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h1>Felicidades <span id="user-name">NickName</span></h1>
+              <h1>¡Ganaste el juego!</h1>
+  
+              <!-- <h1>¡Oh no <span id="user-name">Nickname</span>!</h1>
+              <h1>¡Perdiste el juego!</h1> -->
+            </div>
+          </div>
+        </dialog>
+        <div class="await d-none" id="await">
+          <span>Espere su turno...</span>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>

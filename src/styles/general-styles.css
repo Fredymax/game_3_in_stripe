@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.debugger * {
+  outline: 1px solid crimson;
+}
+
+::placeholder {
+  color: var(--color-black);
+  transition-property: opacity;
+  transition-duration: 300ms;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+
+body {
+  inline-size: 100vw;
+  block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-inline-size: 940px;
+  inline-size: 940px;
+}

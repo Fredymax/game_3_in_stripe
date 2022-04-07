@@ -1,0 +1,37 @@
+.grid-game {
+  inline-size: 100%;
+  block-size: 940px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.grid-item {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background-color: var(--color-gray);
+  user-select: none;
+}
+
+.grid-item:hover {
+  background-color: hsl(0, 0%, 87%);
+}
+
+.grid-item:nth-child(1) {
+  border-top-left-radius: 81px;
+}
+.grid-item:nth-child(3) {
+  border-top-right-radius: 81px;
+}
+.grid-item:nth-child(7) {
+  border-bottom-left-radius: 81px;
+}
+.grid-item:nth-child(9) {
+  border-bottom-right-radius: 81px;
+}
+
+.grid-item img {
+  position: absolute;
+}

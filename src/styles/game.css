@@ -1,0 +1,35 @@
+@import url(./form.css);
+@import url(./grid-game.css);
+
+.content-grid {
+  position: relative;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 81px;
+}
+
+.await{
+  position: absolute;  
+  inline-size: 100%;
+  block-size: 100%;
+  font: var(--font-open-sans);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.487);
+  border-radius: 81px;
+  /* padding-block-start: 80px; */
+  color: var(--color-white);
+  pointer-events: all;
+  user-select: none;
+}
+
+.d-none {
+  display: none;
+}
